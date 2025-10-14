@@ -1,8 +1,12 @@
-import { Menu, X, Mountain, Users, Calendar, Award, MapPin, ChevronRight } from 'lucide-react';
+import { Menu, X, Users, Calendar, Award, MapPin, ChevronRight, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const sendWhatsApp = () => {
+    window.open('https://wa.me/34621059265', '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -17,7 +21,6 @@ function App() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#sobre-nosotros" className="text-slate-700 hover:text-blue-700 transition-colors">Sobre Nosotros</a>
               <a href="#eventos" className="text-slate-700 hover:text-blue-700 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a>
-              <a href="#entrenamientos" className="text-slate-700 hover:text-blue-700 transition-colors">Entrenamientos</a>
               <a href="#contacto" className="text-slate-700 hover:text-blue-700 transition-colors">Contacto</a>
               <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
                 Inscribirse
@@ -38,7 +41,6 @@ function App() {
             <div className="px-4 py-4 space-y-3">
               <a href="#sobre-nosotros" className="block text-slate-700 hover:text-blue-700">Sobre Nosotros</a>
               <a href="#eventos" className="block text-slate-700 hover:text-blue-700">SIERRANEVADATRAIL: PINOS GENIL</a>
-              <a href="#entrenamientos" className="block text-slate-700 hover:text-blue-700">Entrenamientos</a>
               <a href="#contacto" className="block text-slate-700 hover:text-blue-700">Contacto</a>
               <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors text-center">
                 Inscribirse
@@ -49,9 +51,13 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-16 h-screen flex items-end justify-center overflow-hidden">
+      <section className="relative pt-16 min-h-screen flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/sntr01.jpg" alt="Sierra Nevada Trail Running" className="w-full h-full object-cover object-center" />
+          <img 
+            src="/sntr01.jpg" 
+            alt="Sierra Nevada Trail Running" 
+            className="w-full h-full object-contain object-center bg-slate-900 md:object-cover" 
+          />
         </div>
 
         <div className="relative z-10 w-full pb-16 px-4 sm:px-6 lg:px-8">
@@ -60,7 +66,7 @@ function App() {
               Inscribirse
               <ChevronRight className="h-5 w-5" />
             </a>
-            <button className="bg-white/90 backdrop-blur-sm text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white transition-all border border-white shadow-lg">
+            <button onClick={() => document.getElementById('eventos').scrollIntoView({behavior: 'smooth'})} className="bg-white/90 backdrop-blur-sm text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white transition-all border border-white shadow-lg">
               Ver Próximos Eventos
             </button>
           </div>
@@ -151,6 +157,34 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             <div className="max-w-4xl mx-auto mt-8 mb-12">
               <img src="/2edition.webp" alt="II Edición Sierra Nevada Trail" className="w-full rounded-2xl shadow-lg" />
             </div>
+
+            <div className="mb-12">
+              <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
+                Inscribirse Ahora
+                <ChevronRight className="h-5 w-5" />
+              </a>
+            </div>
+
+            <div className="max-w-4xl mx-auto mt-12 mb-8">
+              <img src="/guiacorredor.webp" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
+              
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Reglamento</h3>
+              
+              <div className="bg-slate-50 rounded-xl p-4 shadow-inner">
+                <iframe 
+                  src="/reglamento-25_compressed.pdf" 
+                  className="w-full h-96 md:h-[600px] rounded-lg border-2 border-slate-200"
+                  title="Reglamento Sierra Nevada Trails 2025"
+                />
+                <a 
+                  href="/reglamento-25_compressed.pdf" 
+                  download 
+                  className="mt-4 inline-flex items-center gap-2 bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
+                >
+                  Descargar Reglamento
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -175,10 +209,10 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                 <p className="text-slate-600 mb-4">
                   Senderismo y media maratón por los paisajes más espectaculares de las faldas de sierra Nevada
                 </p>
-                <button className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
+                <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
                   Más información
                   <ChevronRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -203,10 +237,10 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                 <p className="text-slate-600 mb-4">
                   Desafía tus límites en nuestra carrera de 30 Km en el parque natural de Sierra Nevada
                 </p>
-                <button className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
+                <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
                   Más información
                   <ChevronRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -231,10 +265,10 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                 <p className="text-slate-600 mb-4">
                   Desafía tus límites en nuestra carrera más exigente del año
                 </p>
-                <button className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
+                <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
                   Más información
                   <ChevronRight className="h-4 w-4" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -242,7 +276,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-700 via-blue-800 to-slate-900 relative overflow-hidden" id="entrenamientos">
+      <section className="py-20 bg-gradient-to-br from-blue-700 via-blue-800 to-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -253,12 +287,9 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             Únete a nuestro club y descubre el trail running con una comunidad apasionada. 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105">
-              Comienza Ahora
-            </button>
-            <button className="bg-transparent text-white px-8 py-4 rounded-lg text-lg font-semibold border-2 border-white hover:bg-white/10 transition-all">
+            <a href="#contacto" className="bg-transparent text-white px-8 py-4 rounded-lg text-lg font-semibold border-2 border-white hover:bg-white/10 transition-all">
               Contactar
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -269,19 +300,18 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="mb-4">
+                <img src="/logosntr.webp" alt="Sierra Nevada Trail Running" className="h-12 brightness-0 invert" />
               </div>
               <p className="text-slate-400">
-                Tu club de trail running en Sierra Nevada
+                Tu comunidad de trail running en Sierra Nevada
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Enlaces</h4>
+              <h4 className="font-semibold mb-4">Links</h4>
               <ul className="space-y-2 text-slate-400">
                 <li><a href="#sobre-nosotros" className="hover:text-blue-400 transition-colors">Sobre Nosotros</a></li>
                 <li><a href="#eventos" className="hover:text-blue-400 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a></li>
-                <li><a href="#entrenamientos" className="hover:text-blue-400 transition-colors">Entrenamientos</a></li>
-                <li><a href="#contacto" className="hover:text-blue-400 transition-colors">Contacto</a></li>
               </ul>
             </div>
 
@@ -292,6 +322,13 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                 <li>+34 621 059 265</li>
                 <li>Sierra Nevada, España</li>
               </ul>
+              <button 
+                onClick={sendWhatsApp}
+                className="mt-4 inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+              >
+                <MessageCircle className="h-5 w-5" />
+                WhatsApp
+              </button>
             </div>
 
             <div>

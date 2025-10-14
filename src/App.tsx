@@ -205,7 +205,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                   <Calendar className="h-4 w-4" />
                   <span>8 Noviembre 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Senderismo / Media maratón</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">OPEN</h3>
                 <p className="text-slate-600 mb-4">
                   Senderismo y media maratón por los paisajes más espectaculares de las faldas de sierra Nevada
                 </p>
@@ -233,7 +233,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                   <Calendar className="h-4 w-4" />
                   <span>8 Noviembre 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Skyrace</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">SKYRACE</h3>
                 <p className="text-slate-600 mb-4">
                   Desafía tus límites en nuestra carrera de 30 Km en el parque natural de Sierra Nevada
                 </p>
@@ -261,7 +261,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                   <Calendar className="h-4 w-4" />
                   <span>8 Noviembre 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Maratón</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">MaARATÓN</h3>
                 <p className="text-slate-600 mb-4">
                   Desafía tus límites en nuestra carrera más exigente del año
                 </p>

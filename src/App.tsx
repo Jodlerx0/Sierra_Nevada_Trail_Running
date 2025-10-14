@@ -71,9 +71,10 @@ function App() {
       <section className="py-20 bg-slate-50" id="sobre-nosotros">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Por Qué Elegirnos</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Bienvenid@s a Sierra Nevada Trail Running Club </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Somos más que un club, somos una familia de runners que comparten la pasión por las montañas
+              Somos un club joven, nacido a principios de 2023 en el corazón de Sierra Nevada (Granada), y estamos en pleno crecimiento. Nuestra esencia es compartir la pasión por la montaña a través de salidas comunitarias y actividades que fortalecen los lazos entre soci@s.
+No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre quienes formamos parte del grupo. Más que un club, somos una comunidad en movimiento, un lugar donde la montaña se convierte en escenario de amistad, aprendizaje y superación.
             </p>
           </div>
 
@@ -84,7 +85,7 @@ function App() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Comunidad</h3>
               <p className="text-slate-600">
-                Más de 300 miembros activos que comparten tu pasión por el trail running
+                Más de 100 miembros activos que comparten tu pasión por el trail running
               </p>
             </div>
 
@@ -94,7 +95,7 @@ function App() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Eventos</h3>
               <p className="text-slate-600">
-                Organizamos salidas semanales y competiciones durante todo el año
+                Organizamos salidas y competiciones durante todo el año
               </p>
             </div>
 
@@ -147,7 +148,7 @@ function App() {
               <div className="p-6 bg-white">
                 <div className="flex items-center gap-2 text-blue-700 text-sm mb-2">
                   <Calendar className="h-4 w-4" />
-                  <span>15 Noviembre 2025</span>
+                  <span>8 Noviembre 2025</span>
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">Trail Nocturno</h3>
                 <p className="text-slate-600 mb-4">
@@ -228,7 +229,7 @@ function App() {
             ¿Listo para tu Próxima Aventura?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Únete a nuestro club y descubre el trail running con una comunidad apasionada. Primera sesión gratuita para nuevos miembros.
+            Únete a nuestro club y descubre el trail running con una comunidad apasionada. 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105">
@@ -250,7 +251,7 @@ function App() {
                 <img src="/logosntr.webp" alt="Sierra Nevada Trail Running" className="h-12 brightness-0 invert" />
               </div>
               <p className="text-slate-400">
-                Tu comunidad de trail running para conquistar las montañas
+                Tu comunidad de trail running en Sierra Nevada
               </p>
             </div>
 
@@ -284,7 +285,7 @@ function App() {
           </div>
 
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2025 Trail Running Club. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Sierra Nevada Trail Running Club. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>

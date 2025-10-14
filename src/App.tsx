@@ -166,7 +166,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             </div>
 
             <div className="max-w-4xl mx-auto mt-12 mb-8">
-              <img src="/guiacorredor.webp" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
+              <img src="/guia.png" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
               
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Reglamento</h3>
               

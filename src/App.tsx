@@ -72,10 +72,27 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Bienvenid@s a Sierra Nevada Trail Running Club </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
               Somos un club joven, nacido a principios de 2023 en el corazón de Sierra Nevada (Granada), y estamos en pleno crecimiento. Nuestra esencia es compartir la pasión por la montaña a través de salidas comunitarias y actividades que fortalecen los lazos entre soci@s.
 No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre quienes formamos parte del grupo. Más que un club, somos una comunidad en movimiento, un lugar donde la montaña se convierte en escenario de amistad, aprendizaje y superación.
             </p>
+            
+            <h2 className="text-4xl font-bold text-slate-900 mb-4 mt-16">CAMPAÑA SOCIOS 2025/26</h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+              Renovaciones socios:
+
+Desde 15 de Octubre a 1 de Enero 2026: 30€
+
+Alta nuevo socio:
+
+50€ Temporada 2026 (Desde 15 de Noviembre)
+
+Para más información de como inscribirte al club, no dudes en escribirnos un email a cdsierranevadatrailrunning@gmail.com
+            </p>
+            
+            <div className="max-w-4xl mx-auto mt-8">
+              <img src="/equipacion.jpg" alt="Equipación Sierra Nevada Trail Running" className="w-full rounded-2xl shadow-lg" />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

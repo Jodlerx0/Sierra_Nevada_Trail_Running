@@ -51,12 +51,12 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-16 min-h-screen flex items-end justify-center overflow-hidden">
-        <div className="absolute inset-0">
+      <section className="relative pt-16 md:pt-16 min-h-screen flex items-end justify-center overflow-hidden">
+        <div className="absolute inset-0 top-16 md:top-0">
           <img 
             src="/sntr01.jpg" 
             alt="Sierra Nevada Trail Running" 
-            className="w-full h-full object-contain object-center bg-slate-900 md:object-cover" 
+            className="w-full h-full object-contain object-top bg-slate-900 md:object-cover md:object-center" 
           />
         </div>
 
@@ -166,7 +166,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             </div>
 
             <div className="max-w-4xl mx-auto mt-12 mb-8">
-              <img src="/guia.png" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
+              <img src="/guiacorredor.webp" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
               
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Reglamento</h3>
               

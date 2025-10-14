@@ -137,12 +137,12 @@ No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800"></div>
                 <img
-                  src="https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/2edition.webp"
                   alt="Trail running event"
                   className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
-                  15 KM
+                  18 KM
                 </div>
               </div>
               <div className="p-6 bg-white">
@@ -150,9 +150,9 @@ No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre
                   <Calendar className="h-4 w-4" />
                   <span>8 Noviembre 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Trail Nocturno</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Senderismo / Media maratón</h3>
                 <p className="text-slate-600 mb-4">
-                  Una experiencia única corriendo bajo las estrellas por senderos de montaña
+                  Senderismo y media maratón por los paisajes más espectaculares de las faldas de sierra Nevada
                 </p>
                 <button className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
                   Más información
@@ -165,7 +165,7 @@ No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800"></div>
                 <img
-                  src="https://images.pexels.com/photos/2803158/pexels-photo-2803158.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/2edition.webp"
                   alt="Mountain race"
                   className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-500"
                 />
@@ -176,11 +176,11 @@ No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre
               <div className="p-6 bg-white">
                 <div className="flex items-center gap-2 text-blue-700 text-sm mb-2">
                   <Calendar className="h-4 w-4" />
-                  <span>22 Noviembre 2025</span>
+                  <span>8 Noviembre 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Ultra Montaña</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Skyrace</h3>
                 <p className="text-slate-600 mb-4">
-                  Desafía tus límites en nuestra carrera más exigente del año
+                  Desafía tus límites en nuestra carrera de 30 Km en el parque natural de Sierra Nevada
                 </p>
                 <button className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
                   Más información
@@ -193,22 +193,22 @@ No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800"></div>
                 <img
-                  src="https://images.pexels.com/photos/2524739/pexels-photo-2524739.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/2edition.webp"
                   alt="Training session"
                   className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
-                  10 KM
+                  46 KM
                 </div>
               </div>
               <div className="p-6 bg-white">
                 <div className="flex items-center gap-2 text-blue-700 text-sm mb-2">
                   <Calendar className="h-4 w-4" />
-                  <span>Todos los Sábados</span>
+                  <span>8 Noviembre 2025</span>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Entrenamiento Grupal</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Maratón</h3>
                 <p className="text-slate-600 mb-4">
-                  Sesiones de entrenamiento para todos los niveles con guías profesionales
+                  Desafía tus límites en nuestra carrera más exigente del año
                 </p>
                 <button className="text-blue-700 font-semibold hover:text-blue-800 flex items-center gap-1">
                   Más información

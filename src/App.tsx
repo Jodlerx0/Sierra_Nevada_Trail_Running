@@ -269,10 +269,9 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="mb-4">
-                <img src="/logosntr.webp" alt="Sierra Nevada Trail Running" className="h-12 brightness-0 invert" />
               </div>
               <p className="text-slate-400">
-                Tu comunidad de trail running en Sierra Nevada
+                Tu club de trail running en Sierra Nevada
               </p>
             </div>
 

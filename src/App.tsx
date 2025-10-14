@@ -91,7 +91,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             </p>
             
             <div className="max-w-4xl mx-auto mt-8">
-              <img src="/equipacion.jpg" alt="Equipación Sierra Nevada Trail Running" className="w-full rounded-2xl shadow-lg" />
+              <img src="/equipament.webp" alt="Equipación Sierra Nevada Trail Running" className="w-full rounded-2xl shadow-lg" />
             </div>
           </div>
 

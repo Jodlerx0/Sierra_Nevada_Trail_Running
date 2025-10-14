@@ -268,8 +268,8 @@ No seguimos un calendario fijo: preferimos la espontaneidad y la conexión entre
             <div>
               <h4 className="font-semibold mb-4">Contacto</h4>
               <ul className="space-y-2 text-slate-400">
-                <li>info@trailrunningclub.com</li>
-                <li>+34 XXX XXX XXX</li>
+                <li>cdsierranevadatrailrunning@gmail.com</li>
+                <li>+34 621 059 265</li>
                 <li>Sierra Nevada, España</li>
               </ul>
             </div>

@@ -16,12 +16,12 @@ function App() {
 
             <div className="hidden md:flex items-center space-x-8">
               <a href="#sobre-nosotros" className="text-slate-700 hover:text-blue-700 transition-colors">Sobre Nosotros</a>
-              <a href="#eventos" className="text-slate-700 hover:text-blue-700 transition-colors">Eventos</a>
+              <a href="#eventos" className="text-slate-700 hover:text-blue-700 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a>
               <a href="#entrenamientos" className="text-slate-700 hover:text-blue-700 transition-colors">Entrenamientos</a>
               <a href="#contacto" className="text-slate-700 hover:text-blue-700 transition-colors">Contacto</a>
-              <button className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
-                Únete
-              </button>
+              <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                Inscribirse
+              </a>
             </div>
 
             <button
@@ -37,12 +37,12 @@ function App() {
           <div className="md:hidden bg-white border-t border-slate-200">
             <div className="px-4 py-4 space-y-3">
               <a href="#sobre-nosotros" className="block text-slate-700 hover:text-blue-700">Sobre Nosotros</a>
-              <a href="#eventos" className="block text-slate-700 hover:text-blue-700">Eventos</a>
+              <a href="#eventos" className="block text-slate-700 hover:text-blue-700">SIERRANEVADATRAIL: PINOS GENIL</a>
               <a href="#entrenamientos" className="block text-slate-700 hover:text-blue-700">Entrenamientos</a>
               <a href="#contacto" className="block text-slate-700 hover:text-blue-700">Contacto</a>
-              <button className="w-full bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
-                Únete
-              </button>
+              <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors text-center">
+                Inscribirse
+              </a>
             </div>
           </div>
         )}
@@ -51,15 +51,15 @@ function App() {
       {/* Hero Section */}
       <section className="relative pt-16 h-screen flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/sntr01.jpg" alt="Sierra Nevada Trail Running" className="w-full h-full object-cover" />
+          <img src="/sntr01.jpg" alt="Sierra Nevada Trail Running" className="w-full h-full object-cover object-center" />
         </div>
 
         <div className="relative z-10 w-full pb-16 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
-              Únete al Club
+            <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
+              Inscribirse
               <ChevronRight className="h-5 w-5" />
-            </button>
+            </a>
             <button className="bg-white/90 backdrop-blur-sm text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white transition-all border border-white shadow-lg">
               Ver Próximos Eventos
             </button>
@@ -144,9 +144,13 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Próximos Eventos</h2>
-            <p className="text-xl text-slate-600">
+            <p className="text-xl text-slate-600 mb-8">
               Únete a nuestras próximas aventuras en la montaña
             </p>
+            
+            <div className="max-w-4xl mx-auto mt-8 mb-12">
+              <img src="/2edition.webp" alt="II Edición Sierra Nevada Trail" className="w-full rounded-2xl shadow-lg" />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -276,7 +280,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
               <h4 className="font-semibold mb-4">Enlaces</h4>
               <ul className="space-y-2 text-slate-400">
                 <li><a href="#sobre-nosotros" className="hover:text-blue-400 transition-colors">Sobre Nosotros</a></li>
-                <li><a href="#eventos" className="hover:text-blue-400 transition-colors">Eventos</a></li>
+                <li><a href="#eventos" className="hover:text-blue-400 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a></li>
                 <li><a href="#entrenamientos" className="hover:text-blue-400 transition-colors">Entrenamientos</a></li>
                 <li><a href="#contacto" className="hover:text-blue-400 transition-colors">Contacto</a></li>
               </ul>
@@ -294,8 +298,8 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             <div>
               <h4 className="font-semibold mb-4">Síguenos</h4>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Instagram</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Facebook</a></li>
+                <li><a href="https://www.instagram.com/sierranevadatrailrunning" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Instagram</a></li>
+                <li><a href="https://www.facebook.com/share/1FS4246uHH/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Facebook</a></li>
                 <li><a href="#" className="hover:text-blue-400 transition-colors">Strava</a></li>
               </ul>
             </div>

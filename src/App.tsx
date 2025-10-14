@@ -51,16 +51,16 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-16 md:pt-16 h-screen flex items-end justify-center overflow-hidden">
-        <div className="absolute inset-0 top-16 md:top-0">
+      <section className="relative pt-16 md:pt-16 overflow-hidden">
+        <div className="relative w-full">
           <img 
             src="/sntr01.jpg" 
             alt="Sierra Nevada Trail Running" 
-            className="w-full h-full object-contain object-top bg-slate-900 md:object-cover md:object-center" 
+            className="w-full h-auto object-contain bg-slate-900 md:h-screen md:object-cover md:object-center" 
           />
         </div>
 
-        <div className="relative z-10 w-full pb-8 md:pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 w-full py-6 md:absolute md:bottom-16 md:left-0 md:right-0 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-black/50 to-transparent md:bg-transparent">
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
               Inscribirse

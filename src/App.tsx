@@ -166,7 +166,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             </div>
 
             <div className="max-w-4xl mx-auto mt-12 mb-8">
-              <img src="/guia.png" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
+              <img src="/guiacorredor.webp" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
               
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Reglamento</h3>
               
@@ -299,11 +299,8 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="mb-4">
-                <img src="/logosntr.webp" alt="Sierra Nevada Trail Running" className="h-12 brightness-0 invert" />
-              </div>
               <p className="text-slate-400">
-                Tu comunidad de trail running en Sierra Nevada
+                C. D. Sierra Nevada Trail Running Club
               </p>
             </div>
 

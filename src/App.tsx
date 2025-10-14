@@ -333,7 +333,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
               <ul className="space-y-2 text-slate-400">
                 <li><a href="https://www.instagram.com/sierranevadatrailrunning" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Instagram</a></li>
                 <li><a href="https://www.facebook.com/share/1FS4246uHH/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Facebook</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Strava</a></li>
+                <li><a href="https://strava.app.link/AbvMKgALsXb" className="hover:text-blue-400 transition-colors">Strava</a></li>
               </ul>
             </div>
           </div>

@@ -4,6 +4,18 @@ import { useState } from 'react';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Set favicon
+  useState(() => {
+    const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'icon';
+    link.href = '/logosntr.webp';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    
+    // Set page title
+    document.title = 'Sierra Nevada Trail Running Club';
+  }, []);
+
   const sendWhatsApp = () => {
     window.open('https://wa.me/34621059265', '_blank');
   };
@@ -364,4 +376,4 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
   );
 }
 
-export default App; 
+export default App;

@@ -168,6 +168,23 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
             <div className="max-w-4xl mx-auto mt-12 mb-8">
               <img src="/guia.png" alt="Guía del Corredor" className="w-full rounded-2xl shadow-lg mb-8" />
               
+              <div className="w-full mb-8">
+                <div className="relative" style={{ paddingBottom: '56.25%', paddingTop: 0, height: 0 }}>
+                  <iframe 
+                    title="Guia del corredor SIERRANEVADATRAILS" 
+                    frameBorder="0" 
+                    width="1200" 
+                    height="675" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                    src="https://view.genially.com/68d90ae68e5b6a684f5a3ac2" 
+                    type="text/html" 
+                    allowFullScreen={true}
+                    scrolling="yes"
+                    className="rounded-lg shadow-lg"
+                  />
+                </div>
+              </div>
+              
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Reglamento</h3>
               
               <div className="bg-slate-50 rounded-xl p-4 shadow-inner">
@@ -347,4 +364,4 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
   );
 }
 
-export default App;
+export default App; 

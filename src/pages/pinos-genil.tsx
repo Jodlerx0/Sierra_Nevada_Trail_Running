@@ -1,8 +1,12 @@
 import { Menu, X, Users, Calendar, Award, MapPin, ChevronRight, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import PinosGenil from './pages/PinosGenil';
 
-function App() {
+// Componente Home (tu página actual)
+function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   // Set favicon
   useState(() => {
@@ -26,13 +30,14 @@ function App() {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
+            <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
               <img src="/logosntr.webp" alt="Sierra Nevada Trail Running" className="h-12" />
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
               <a href="#sobre-nosotros" className="text-slate-700 hover:text-blue-700 transition-colors">Sobre Nosotros</a>
               <a href="#eventos" className="text-slate-700 hover:text-blue-700 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a>
+              <Link to="/pinos-genil" className="text-slate-700 hover:text-blue-700 transition-colors">Ruta Pinos Genil</Link>
               <a href="#contacto" className="text-slate-700 hover:text-blue-700 transition-colors">Contacto</a>
               <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
                 Inscribirse
@@ -53,6 +58,7 @@ function App() {
             <div className="px-4 py-4 space-y-3">
               <a href="#sobre-nosotros" className="block text-slate-700 hover:text-blue-700">Sobre Nosotros</a>
               <a href="#eventos" className="block text-slate-700 hover:text-blue-700">SIERRANEVADATRAIL: PINOS GENIL</a>
+              <Link to="/pinos-genil" className="block text-slate-700 hover:text-blue-700">Ruta Pinos Genil</Link>
               <a href="#contacto" className="block text-slate-700 hover:text-blue-700">Contacto</a>
               <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors text-center">
                 Inscribirse
@@ -78,7 +84,7 @@ function App() {
               Inscribirse
               <ChevronRight className="h-5 w-5" />
             </a>
-            <button onClick={() => document.getElementById('eventos').scrollIntoView({behavior: 'smooth'})} className="bg-white/90 backdrop-blur-sm text-blue-700 px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-white transition-all border border-white shadow-lg">
+            <button onClick={() => document.getElementById('eventos')?.scrollIntoView({behavior: 'smooth'})} className="bg-white/90 backdrop-blur-sm text-blue-700 px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:bg-white transition-all border border-white shadow-lg">
               Ver Próximos Eventos
             </button>
           </div>
@@ -338,6 +344,7 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
               <ul className="space-y-2 text-slate-400">
                 <li><a href="#sobre-nosotros" className="hover:text-blue-400 transition-colors">Sobre Nosotros</a></li>
                 <li><a href="#eventos" className="hover:text-blue-400 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a></li>
+                <li><Link to="/pinos-genil" className="hover:text-blue-400 transition-colors">Ruta Pinos Genil</Link></li>
               </ul>
             </div>
 
@@ -373,6 +380,19 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
         </div>
       </footer>
     </div>
+  );
+}
+
+// Componente principal App con Router
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pinos-genil" element={<PinosGenil />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

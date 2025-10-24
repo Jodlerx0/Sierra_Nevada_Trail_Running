@@ -1,2 +1,13 @@
-/voluntario-formulario/    /#voluntarios    200
+/voluntario-formulario    /#voluntarios    301!
+/*    /index.html   200
+```
+
+**Explicación:**
+- `301!` es una redirección permanente con force (el `!` fuerza la redirección incluso si el archivo existe)
+- Esto hará que cuando alguien visite `/voluntario-formulario`, la URL en el navegador cambie a `/#voluntarios` y se desplace a esa sección
+
+**Alternativa más limpia** - Si prefieres que la URL completa se vea como `https://sierranevadatrail.com/voluntario-formulario/#voluntarios`, puedes usar:
+```
+/voluntario-formulario/*    /voluntario-formulario/#voluntarios    301!
+/voluntario-formulario    /#voluntarios    301!
 /*    /index.html   200

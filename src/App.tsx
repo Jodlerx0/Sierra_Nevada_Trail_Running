@@ -33,6 +33,7 @@ function App() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#sobre-nosotros" className="text-slate-700 hover:text-blue-700 transition-colors">Sobre Nosotros</a>
               <a href="#eventos" className="text-slate-700 hover:text-blue-700 transition-colors">SIERRANEVADATRAIL: PINOS GENIL</a>
+              <a href="#voluntarios" className="text-slate-700 hover:text-blue-700 transition-colors">Voluntarios</a>
               <a href="#contacto" className="text-slate-700 hover:text-blue-700 transition-colors">Contacto</a>
               <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
                 Inscribirse
@@ -53,6 +54,7 @@ function App() {
             <div className="px-4 py-4 space-y-3">
               <a href="#sobre-nosotros" className="block text-slate-700 hover:text-blue-700">Sobre Nosotros</a>
               <a href="#eventos" className="block text-slate-700 hover:text-blue-700">SIERRANEVADATRAIL: PINOS GENIL</a>
+              <a href="#voluntarios" className="block text-slate-700 hover:text-blue-700">Voluntarios</a>
               <a href="#contacto" className="block text-slate-700 hover:text-blue-700">Contacto</a>
               <a href="https://sportmaniacs.com/es/services/inscription/ii-edicin-sierra-nevada-trails-2025" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors text-center">
                 Inscribirse
@@ -300,6 +302,17 @@ Para más información de como inscribirte al club, no dudes en escribirnos un e
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="mt-16 text-center" id="voluntarios">
+            <h3 className="text-3xl font-bold text-slate-900 mb-4">¿Quieres ser parte del evento?</h3>
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+              Únete a nuestro equipo de voluntarios y vive la experiencia desde dentro
+            </p>
+            <a href="https://forms.gle/t1Pi35GqppWvThg27" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
+              Inscribirte como Voluntario
+              <ChevronRight className="h-5 w-5" />
+            </a>
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ import { useState } from 'react';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Set favicon
+  // Set favicon and handle hash navigation
   useState(() => {
     const link = document.querySelector("link[rel~='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
@@ -14,6 +14,29 @@ function App() {
     
     // Set page title
     document.title = 'Sierra Nevada Trail Running Club';
+    
+    // Handle hash navigation after page load
+    const handleHashNavigation = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+    };
+    
+    // Run on initial load
+    handleHashNavigation();
+    
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashNavigation);
+    
+    return () => {
+      window.removeEventListener('hashchange', handleHashNavigation);
+    };
   }, []);
 
   const sendWhatsApp = () => {
